@@ -9,7 +9,7 @@ setup(name='keras_lr_finder',
       license='MIT',
       packages=['keras_lr_finder'],
       install_requires=[
-            'keras>=2.0.0',
+            'tensorflow-gpu>=2.0.0-rc0',
             'matplotlib'
       ],
       zip_safe=False)

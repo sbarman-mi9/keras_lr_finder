@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import math
-from keras.callbacks import LambdaCallback
-import keras.backend as K
+from tensorflow.keras.callbacks import LambdaCallback
+from tensorflow.keras import backend as K
 import numpy as np
 
 
@@ -27,7 +27,8 @@ class LRFinder:
         self.losses.append(loss)
 
         # Check whether the loss got too large or NaN
-        if batch > 5 and (math.isnan(loss) or loss > self.best_loss * 4):
+        #if batch > 5 and (math.isnan(loss) or loss > self.best_loss * 4):
+        if batch > 5 and math.isnan(loss):
             self.model.stop_training = True
             return
 

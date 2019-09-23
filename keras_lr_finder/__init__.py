@@ -1,1 +1,1 @@
-from keras_lr_finder.lr_finder import LRFinder
+from .lr_finder import *

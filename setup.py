@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='keras_lr_finder',
-      version='0.1',
+      version='0.2',
       description='Learning rate finder for Keras.',
       url='https://github.com/sbarman-mi9/keras_lr_finder',
       author='Snehasish Barman',

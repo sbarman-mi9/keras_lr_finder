@@ -19,7 +19,7 @@ lr_finder.find((x_train, y_train), 25000, 32, 1e-7, 10, steps=500)
 ```
 
 ```python
-# Plot the loss, ignore 20 batches in the beginning and 5 in the end
+# Plot the iterations, loss, and smoothed loss ignoring 20 batches in the beginning and 5 in the end
 lr_finder.plot(skip_start=20, skip_end=5)
 ```
 

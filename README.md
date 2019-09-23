@@ -1,11 +1,19 @@
-# keras_lr_finder
+# Keras LR Finder
 Plots the change of the loss function of a Keras model when the learning rate is exponentially increasing.
 
-`This code has been adapted and tested for TensorFlow Keras >=2.0`
+`Works with TensorFlow Keras >=2.0`
+>Changes: 
+>1. Re-wrote code from scratch with proper usage of tf.keras callback system
+>2. Tracks both raw loss and exponentially weighted loss over iterations.
+>3. Unification of plots.
 
 ## Purpose
 See details in ["Estimating an Optimal Learning Rate For a Deep Neural Network"](https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0).
 
+## Install
+```
+pip install git+http://github.com/sbarman-mi9/keras_lr_finder.git
+```
 ## Usage
 Create and compile a Keras model, then execute this code:
 

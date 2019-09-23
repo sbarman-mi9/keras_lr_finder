@@ -1,7 +1,7 @@
 # keras_lr_finder
 Plots the change of the loss function of a Keras model when the learning rate is exponentially increasing.
 
-`This has been tested with TensorFlow Keras >=2.0`
+`This code has been adapted and tested for TensorFlow Keras >=2.0`
 
 ## Purpose
 See details in ["Estimating an Optimal Learning Rate For a Deep Neural Network"](https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0).
